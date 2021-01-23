@@ -1,0 +1,25 @@
+name: geofire_flutter
+description: A new flutter plugin project.
+version: 0.0.1
+author: "Kishor Mainali <mainali1522kishor@gmail.com>"
+homepage: "https://github.com/kishor98100/geofire_flutter"
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: np.com.mkishor.geofire_flutter
+        pluginClass: GeofireFlutterPlugin
+      ios:
+        pluginClass: GeofireFlutterPlugin
