@@ -18,6 +18,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await GeofireFlutter.platformVersion, '42');
+    expect(await GeofireFlutter().platformVersion, '42');
   });
 }
