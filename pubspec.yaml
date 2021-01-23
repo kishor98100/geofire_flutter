@@ -1,7 +1,6 @@
 name: geofire_flutter
 description: A new flutter plugin project.
 version: 0.0.1
-author: "Kishor Mainali <mainali1522kishor@gmail.com>"
 homepage: "https://github.com/kishor98100/geofire_flutter"
 
 environment:
