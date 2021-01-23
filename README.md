@@ -18,7 +18,7 @@ At its heart, GeoFire simply stores locations with string keys. Its main benefit
 
 GeoFire uses the Firebase database for data storage, allowing query results to be updated in realtime as they change. GeoFire selectively loads only the data near certain locations, keeping your applications light and responsive, even with extremely large datasets.
 
-###Quickstart
+### Quickstart
 
  Initalize GeoFire with path to keys in Realtime Database
     
@@ -26,7 +26,7 @@ GeoFire uses the Firebase database for data storage, allowing query results to b
     Intializing geoFire
     Geofire.initialize(pathToReference);
     
-####Setting location data
+#### Setting location data
 
 Here setLocation method is used and first is the unique id of the place and other two parameters are latitude and longitude of that place.
 
@@ -35,7 +35,7 @@ Here setLocation method is used and first is the unique id of the place and othe
             30.730743,
             76.774948)
             
-####Retrieving a location
+#### Retrieving a location
 
 Retrieving a location for a single key in GeoFire happens like below:
 
@@ -44,25 +44,25 @@ Retrieving a location for a single key in GeoFire happens like below:
     
     print(response);
             
-####Geo Queries
+#### Geo Queries
 
 GeoFire allows you to query all keys within a geographic area using GeoQuery objects. As the locations for keys change, the query is updated in realtime and fires events letting you know if any relevant keys have moved. GeoQuery parameters can be updated later to change the size and center of the queried area.
 
     response = await Geofire.queryAtLocation(30.730743, 76.774948, 5);
 
 
-####Removing a location
+#### Removing a location
 To remove a location and delete it from the database simply pass the location's key to removeLocation:
 
     bool response = await Geofire.removeLocation("AsH28LWk8MXfwRLfVxgx");
 
     print(response);                
 
-####Contributing
+#### Contributing
 if you want to contribute to GeoFire, clone the repository and just start making pull requests.
 
     git clone https://github.com/kishor98100/geofire_flutter
 
-#####This plugin is in development suggestions are welcome. Happy Coding!!!
+##### This plugin is in development suggestions are welcome. Happy Coding!!!
 
 
